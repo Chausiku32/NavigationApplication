@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/stepOneFragment">
+
+    <fragment
+        android:id="@+id/stepOneFragment"
+        android:name="nixmar.chausiku32.navigationapplicaton.StepOneFragment"
+        android:label="fragment_step_one"
+        tools:layout="@layout/fragment_step_one" >
+        <action
+            android:id="@+id/action_stepOneFragment_to_stepTwoFragment"
+            app:destination="@id/stepTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stepTwoFragment"
+        android:name="nixmar.chausiku32.navigationapplicaton.StepTwoFragment"
+        android:label="fragment_step_two"
+        tools:layout="@layout/fragment_step_two" >
+        <action
+            android:id="@+id/action_stepTwoFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="nixmar.chausiku32.navigationapplicaton.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/settings_dest"
+        android:name="nixmar.chausiku32.navigationapplicaton.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
